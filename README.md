@@ -1,3 +1,4 @@
+
 Makey-makey-using-arduino-uno-r3-Multiple-inputs-
 
 
@@ -7,24 +8,37 @@ For making makey makey using  Arduino Leonardo refer to alpesh vitha tutorial gi
 http://www.youtube.com/watch?v=WDPTA0-fbNE
 
 You need to add library to your arduino software the following are the links to the library
+
 https://github.com/sebnil/Moving-Avarage-Filter--Arduino-Library-
+
 https://github.com/SFE-Chris/UNO-HIDKeyboard-Library
-
-
 
 You need to program arduino uno r3 in dfu mode for making makey makey please refer to the following tutorials
 http://www.youtube.com/watch?v=fSXZMVdO5Sg
+
 http://www.youtube.com/watch?v=1unTKKGd8qs
-=================================================
-//Source for multiple inputs
-#include <HIDKeyboard.h>
-#include <MovingAvarageFilter.h>
+
+-------------------------------------------------------------------------------------------------   
+// Source code   
+   
+   
+   
+   
+   
+   #include < HIDKeyboard.h >
+
+   #include < MovingAvarageFilter.h >
 
 MovingAvarageFilter movingAvarageFilter(20);
+
 MovingAvarageFilter movingAvarageFilter1(20);
+
 MovingAvarageFilter movingAvarageFilter2(20);
+
 MovingAvarageFilter movingAvarageFilter3(20);
+
 HIDKeyboard Keyboard;
+
 boolean check = false;
 
 boolean check1 = false;
