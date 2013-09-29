@@ -1,5 +1,6 @@
 Makey-makey-using-arduino-uno-r3-Multiple-inputs-
 
+Source code for multiple inputs and Single input
 For making makey makey using  Arduino Leonardo refer to alpesh vitha tutorial given below
 
 http://www.youtube.com/watch?v=WDPTA0-fbNE
@@ -20,16 +21,16 @@ http://www.youtube.com/watch?v=1unTKKGd8qs
 
 
 -------------------------------------------------------------------------------------------------   
-// Source code   
+// Source code for multiple inputs
    
    
    
    
    
-   #include < HIDKeyboard.h >
+   #include < HIDKeyboard.h >   //Delete the spaces Between the header file while compiling
 
-   #include < MovingAvarageFilter.h >
-
+   #include < MovingAvarageFilter.h >  //Delete the spaces Between the header file while compiling
+   
 MovingAvarageFilter movingAvarageFilter(20);
 
 MovingAvarageFilter movingAvarageFilter1(20);
@@ -209,6 +210,78 @@ if (output3 >600) {
   }     
 
   }
+
+
+}
+
+-----------------------------------------------------------------------------------------------------------------------
+// Source code for one input
+
+
+   # include < HIDKeyboard.h > //Delete the spaces Between the header file while compiling
+   
+   # include < MovingAvarageFilter.h >  //Delete the spaces Between the header file while compiling
+   
+MovingAvarageFilter movingAvarageFilter(20);
+
+HIDKeyboard Keyboard;
+
+boolean check = false;
+
+void setup()
+
+{
+
+Keyboard.begin();
+
+}
+
+
+void loop()
+
+{
+
+// declare input and output variables
+
+float input = analogRead(0); // without a real input, looking at the step respons (input at unity, 1)
+
+float output = 0;
+
+
+output = movingAvarageFilter.process(input);
+
+
+
+
+
+if (output < 300 ) { // you can change this parameter to fine tune the sensitivity
+if (!check)
+
+{
+Keyboard.pressKey('w');
+
+Keyboard.releaseKey();
+
+
+check = !check;
+
+}
+
+}
+
+
+if (output >600) 
+
+{
+
+if (check)
+
+{
+check = !check;
+
+}
+
+}
 
 
 }
