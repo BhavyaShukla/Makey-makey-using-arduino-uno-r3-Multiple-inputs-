@@ -14,6 +14,10 @@ https://github.com/sebnil/Moving-Avarage-Filter--Arduino-Library-
 
 https://github.com/SFE-Chris/UNO-HIDKeyboard-Library
 
+How to add Library to your arduino software ? follow the link
+
+http://arduino.cc/en/Guide/Libraries
+
 You need to program arduino uno r3 in dfu mode for making makey makey please refer to the following tutorials
 http://www.youtube.com/watch?v=fSXZMVdO5Sg
 
