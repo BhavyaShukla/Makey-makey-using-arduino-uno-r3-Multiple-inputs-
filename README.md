@@ -23,6 +23,11 @@ http://www.youtube.com/watch?v=fSXZMVdO5Sg
 
 http://www.youtube.com/watch?v=1unTKKGd8qs
 
+You need to upload keyboard firmware to uout arduino uno using the above given tutorial download 
+firmwares from the link given below
+
+http://hunt.net.nz/users/darran/weblog/b3029/
+
 
 -------------------------------------------------------------------------------------------------   
 // Source code for multiple inputs
