@@ -1,11 +1,11 @@
-
 Makey-makey-using-arduino-uno-r3-Multiple-inputs-
-
 
 For making makey makey using  Arduino Leonardo refer to alpesh vitha tutorial given below
 
-
 http://www.youtube.com/watch?v=WDPTA0-fbNE
+
+follow the hardware setup of alpesh vitha 
+but use multiple 1 mega ohms resistor for each input 
 
 You need to add library to your arduino software the following are the links to the library
 
@@ -17,6 +17,7 @@ You need to program arduino uno r3 in dfu mode for making makey makey please ref
 http://www.youtube.com/watch?v=fSXZMVdO5Sg
 
 http://www.youtube.com/watch?v=1unTKKGd8qs
+
 
 -------------------------------------------------------------------------------------------------   
 // Source code   
