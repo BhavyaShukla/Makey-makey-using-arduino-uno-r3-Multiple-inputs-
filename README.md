@@ -252,7 +252,7 @@ void loop()
 
 // declare input and output variables
 
-float input = analogRead(0); // without a real input, looking at the step respons (input at unity, 1)
+float input = analogRead(0); 
 
 float output = 0;
 
