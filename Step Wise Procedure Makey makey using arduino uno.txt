@@ -1,0 +1,20 @@
+Author:Bhavya Shukla
+********************
+Step wise procedure
+1)Install arduino software
+2)install Atmel Flip software
+3)Dont do the hardware setup until the program is uploaded in the on the Arduino uno 
+4)Download the usb serial.hex (https://github.com/arduino/Arduino/blob/master/hardware/arduino/firmwares/atmegaxxu2/arduino-usbserial/Arduino-usbserial-uno.hex)
+5)Power your arduino board using usb cable
+6)Enter into Dfu mode follow the video tutorial(http://www.youtube.com/watch?v=fSXZMVdO5Sg   or   arduino form:http://forum.arduino.cc/index.php/topic,52447.msg374201.html)
+7)Upload usb serial firm ware using Flip Programmer.
+8)After uploading the firmware reset(Power off arduino) the device.
+9)Now again power your arduino board using usb cable.
+10)Upload the sketch (makey makey code)
+11)After uploading the sketch to the board dont power off or remove the usb cable on the board
+12)Now again enter in dfu mode(Follow tutorial http://www.youtube.com/watch?v=1unTKKGd8qs)
+13)This time you will upload the usb keyboard firmware using atmel Flip programmer
+14)Now when reset the device it will show up as an HID keyboard device
+15)Now setup your hardware using the circuit diagram as shown in tutorial
+16)Voila!!!! Now you Have succesfully Finished making Makey makey
+
